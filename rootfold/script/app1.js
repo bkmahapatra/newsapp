@@ -413,13 +413,13 @@ const postRender = (deta) => {
 
 // fetching result function
 async function fetchresult(country = "in", category = "general", page = "1") {
-  let urldata = `https://newsapi.org/v2/top-headlines?country=${country}&category=${category}&pagesize=20&page=${page}&apiKey=b3e493cf037a447aac7fb76a6dc968ad`;
+  // let urldata = `https://newsapi.org/v2/top-headlines?country=${country}&category=${category}&pagesize=20&page=${page}&apiKey=b3e493cf037a447aac7fb76a6dc968ad`;
 
-  const data = await fetch(urldata);
-  const obb1 = await data.json();
+  // const data = await fetch(urldata);
+  // const obb1 = await data.json();
 
-  slideShow(obb1.articles);
-  postRender(obb1.articles);
+  slideShow(obb.articles);
+  postRender(obb.articles);
 
   //cehck page
   if(page==1){
